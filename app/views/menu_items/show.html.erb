@@ -17,5 +17,14 @@
 
 <%= render 'comments/form' %>
 
+<h4>Comments</h4>
+	
+			<% @menu_item.comments.each do |comment| %>
+		
+			<p><strong><%= comment.user.name %></strong></p>
+			<p><%= comment.comment_entry %></p>
+
+		<% end %>
+
 <%= link_to 'Edit', edit_menu_item_path(@menu_item) %> |
 <%= link_to 'Back', menu_items_path %>
