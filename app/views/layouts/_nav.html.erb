@@ -19,6 +19,12 @@
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
+        <li>
+          <% if user_signed_in? %>
+          <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+          <% end %>
+        </li>
       </ul>
       
     </div><!-- /.navbar-collapse -->

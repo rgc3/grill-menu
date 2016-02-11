@@ -10,6 +10,7 @@ class MenuItemsController < ApplicationController
   # GET /menu_items/1
   # GET /menu_items/1.json
   def show
+    @comment = Comment.new
   end
 
   # GET /menu_items/new
