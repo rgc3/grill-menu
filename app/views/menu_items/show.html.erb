@@ -1,30 +1,45 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Item:</strong>
-  <%= @menu_item.item %>
-</p>
-<%= image_tag @menu_item.avatar.url(:medium) %>
-<p>
-  <strong>Description:</strong>
-  <%= @menu_item.description %>
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><strong>Item:</strong></h3>
+  </div>
+  <div class="panel-body">
 
-<p>
-  <strong>Price:</strong>
-  <%= @menu_item.price %>
-</p>
+  	<div class="row">
+
+		<div class="col-md-6">
+			<p><strong>Item:</strong><%= @menu_item.item %></p>
+			<p><strong>Description:</strong><%= @menu_item.description %></p>
+			<p><strong>Price:</strong><%= @menu_item.price %></p>
+		</div>
+		<div class="col-md-6">
+			<%= image_tag @menu_item.avatar.url(:medium) %>
+		</div>
+
+
+  	</div>
+
+	</div>
+</div>
 
 <%= render 'comments/form' %>
 
-<h4>Comments</h4>
-	
-			<% @menu_item.comments.each do |comment| %>
+<br>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><h4 class="comments">Comments</h4></h3>
+  </div>
+  <div class="panel-body comments">
+    <% @menu_item.comments.each do |comment| %>
 		
 			<p><strong><%= comment.user.name %></strong></p>
 			<p><%= comment.comment_entry %></p>
 
 		<% end %>
+  </div>
+</div>
 
-<%= link_to 'Edit', edit_menu_item_path(@menu_item) %> |
-<%= link_to 'Back', menu_items_path %>
+<button type="button" class="btn btn-default btn-lg btn-block"><%= link_to 'Back', menu_items_path %></button>
+

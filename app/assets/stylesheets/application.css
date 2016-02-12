@@ -17,3 +17,147 @@
  .cant-see-me {
  	display:none;
  }
+
+ body {
+ 	background-color: #407F7F;
+ }
+
+ .header {
+ 	padding-top: 0px;
+ 	padding-bottom: 5px;
+ }
+
+ p {
+ 	font-family: 'Ubuntu', sans-serif;
+ }
+
+ .x {
+ 	font-family: 'Ubuntu', sans-serif;
+ }
+
+ .robo {
+ 	font-family: 'Roboto', sans-serif;
+ 	font-size: 400%;
+ 	margin: 0px;
+ 	padding: 0px;
+ }
+
+  .robo1 {
+ 	font-family: 'Roboto', sans-serif;
+ 	font-size: 200%;
+ 	margin: 0px;
+ 	padding: 0px;
+ }
+
+ .container {
+ 	background-color: #669999;
+ 	border-radius: 5px;
+ 	padding-top: 15px;
+ }
+
+ .title {
+ 	font-family: 'Prociono', serif;
+ 	margin-top: 0px;
+ 	padding-bottom: 5px;
+ }
+
+.quotes {
+	background-color: #55AA55;
+}
+
+.headlines {
+	background-color: #2D882D;
+	text-align: center;
+	border-radius: 5px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.panel-default > .panel-heading {
+	background-color: #AA6C39;
+}
+
+.menubody {
+	background-color: #D49A6A;
+}
+
+.menu {
+	background-color: #AA6C39;
+	border-radius: 5px;
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+	padding-top: 10px;
+}
+
+.comments {
+	text-align: center;
+}
+
+/*- Navbar -*/
+
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+   font-family: 'Prociono', serif;
+   padding-bottom: 0px;
+   margin-bottom: 0px;
+}
+
+.navbar-default .navbar-brand {
+  color: #ffffff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #801515;
+}
+.navbar-default .navbar-text {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #801515;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #801515;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #801515;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ffffff;
+}
+.navbar-default .navbar-link {
+  color: #ffffff;
+}
+.navbar-default .navbar-link:hover {
+  color: #801515;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #801515;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #801515;
+  }
+}
